@@ -1,0 +1,17 @@
+{
+    "name": "user/cyberize-plugin-framework-3",
+    "autoload": {
+        "psr-4": {
+            "CPF\\": "_classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmed Musawir",
+            "email": "ahmed.musawir@gmail.com"
+        }
+    ],
+    "require": {
+        "cmb2/cmb2": "^2.9"
+    }
+}
