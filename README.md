@@ -8,7 +8,7 @@ This is a SelfList App Manager Plugin using CPF 3.0 (Cyberize Plugin Framework).
 - Composer
 - PSR4 Namespace
 - WP Ajax (OOP)
-- ES8 JS & jQuery (OOP)
+- ES8 JS & jQuery (OOP & React capable)
 
 ## What this does?
 

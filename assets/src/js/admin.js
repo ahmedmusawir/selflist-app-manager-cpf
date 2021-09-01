@@ -2,9 +2,10 @@
  * ADMIN MAIN SCRIPT
  */
 import $ from 'jquery';
-import TestAdminModule from './_admin-modules/TestAdminModule';
+// import TestAdminModule from './_admin-modules/TestAdminModule';
 import AppManagerSettings from './_admin-modules/AppManagerSettings';
-import AdminAjaxEvents from './_admin-modules/AdminAjaxEvents';
+// import AdminAjaxEvents from './_admin-modules/AdminAjaxEvents';
+// import AddPointsAjaxEvents from './_admin-modules/AddPointsAjaxEvents';
 
 class App {
   constructor() {
@@ -13,12 +14,12 @@ class App {
     // new TestAdminModule();
     // APP MANAGER JS
     new AppManagerSettings();
-    new AdminAjaxEvents();
+    // new AdminAjaxEvents();
+    // new AddPointsAjaxEvents();
   }
 }
 
-// const app = new App();
-
+// INSTANTIATING APP
 $(() => {
   new App();
 });

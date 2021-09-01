@@ -15,7 +15,6 @@
         <input class="form-control" type="text" name="search-user" id="selflist-search-user"
           placeholder="find user by username, display name or id or email">
         <input id="selflist-find-user-button" class="btn btn-danger mt-2" type="button" value="FIND USER">
-        <!-- <input id="selflist-TEST-button" class="btn btn-warning mt-2" type="button" value="TEST POINTS"> -->
 
       </div>
 
@@ -31,12 +30,9 @@
 
         <h1 class="text-danger">Add Points To User Accounts</h1>
         <!-- <label for="search-user">Find User</label> -->
-        <input disabled class="form-control" type="number" name="selflist-user-points" id="selflist-user-points"
+        <input class="form-control" type="number" name="selflist-user-points" id="selflist-user-points"
           placeholder="insert points to add to user account (numbers only)">
-        <input disabled id="selflist-add-user-points-button" class="btn btn-info mt-2" type="button" value="ADD POINTS">
-
-
-
+        <input id="selflist-add-user-points-button" class="btn btn-info mt-2" type="button" value="ADD POINTS">
 
       </div>
       <!-- ADD POINTS RESULT DISPLAY -->
@@ -45,6 +41,8 @@
       </div>
     </section>
   </div>
-
-
+  <!-- REACT APP 2 -->
+  <div class="row">
+    <section id="app2"></section>
+  </div>
 </article>

@@ -5,14 +5,11 @@ class AppManagerSettings extends AdminAjaxEvents {
   constructor() {
     super();
     this.init();
-    // COLLECTING AJAX INFO
-    this.ajaxUrl = ajaxData.ajax_url;
-    this.usersListAjaxFunction = 'get_current_user_list';
-    this.usersPointAddAjaxFunction = 'add_user_points_ajax';
     // COLLECTING ELEMENTS
     this.button = $('#selflist-find-user-button');
     this.userSearchInput = $('#selflist-search-user');
     this.userSearchText;
+    this.userTESTButton = $('#selflist-TEST-button');
 
     this.setEvents();
   }
@@ -24,6 +21,7 @@ class AppManagerSettings extends AdminAjaxEvents {
 
   setEvents = () => {
     this.button.on('click', this.clickHandler);
+    this.userTESTButton.on('click', this.testAjax);
   };
 
   testAjax = () => {
@@ -32,8 +30,22 @@ class AppManagerSettings extends AdminAjaxEvents {
 
   clickHandler = () => {
     this.userSearchText = this.userSearchInput.val();
+    console.log('Find User clicked');
+    // alert(this.userSearchText);
     this.listUsersAjax();
   };
 }
 
 export default AppManagerSettings;
+
+// $(() => {
+//   new AppManagerSettings();
+// });
+
+// jQuery(($) => {
+//   new AppManagerSettings();
+// });
+
+// jQuery(function ($) {
+//   new AppManagerSettings();
+// });
