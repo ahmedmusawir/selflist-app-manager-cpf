@@ -36,7 +36,14 @@ class AddPointsAjaxEvents {
       .done((res) => {
         // console.log(res);
         this.userPointsResultBox.html(res);
+        // RESETTING USER IDS
+        this.userIds = [];
+        // RESETTING INPUTS AND CHECKBOXES
         this.userPointsInput.val('');
+        $('.user-checkbox').prop('checked', false);
+        // DISABLING ADD POINT FORM
+        this.userPointsAddButton.prop('disabled', true);
+        this.userPointsInput.prop('disabled', true);
       })
       .fail(() => {
         console.log('Ajax Failed! In ' + this.usersPointAddAjaxFunction);

@@ -36,6 +36,9 @@ class AdminAjaxEvents extends AddPointsAjaxEvents {
         this.userListResults.html(res);
         // RESETTING USER IDS
         this.userIds = [];
+        // DISABLING ADD POINT FORM
+        this.userPointsAddButton.prop('disabled', true);
+        this.userPointsInput.prop('disabled', true);
         this.addSelectEvents();
       })
       .fail(() => {
